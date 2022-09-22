@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>
+        <input type="file" id="file" onchange="show()" />
+    </p>
+    <p id="size"></p>
+</body>
+
+<script>
+    show = () => {
+        const fi = document.getElementById('file');
+        if (fi.files.length > 0) {
+            console.log(fi.files[0])
+        }
+    }
+</script>
+
+</html>
